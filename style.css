@@ -106,7 +106,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 32px;
-
+    box-shadow: 0 6px 6px lightgrey;
+    overflow: auto;
     .top-row{
         display: flex;
         gap: 24px;
@@ -139,11 +140,43 @@ body{
             width: 48px;
             height: 48px;
         }
+    }
 
-        #text{
-            flex-grow: 1;
-            max-width: max-content;
+    .bottom-row{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        #big-cat{
+            width: 80px;
+            height: 80px;
         }
 
+        #greeting{
+            font-size: 18px;
+
+            p{
+                font-size: 26px;
+            }
+        }
+
+        .options{
+            margin-left: auto;
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .option{
+            font-size: 24px;
+            background-color: #0ea5e9;
+            color: white;
+            height: 50px;
+            width: 150px;
+            border-radius: 25px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
     }
 }
